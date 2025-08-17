@@ -9,7 +9,7 @@
 ## 설치
 
 ```bash
-npm i @dding/topic-engine
+npm i @dding-oss/topic-engine
 ```
 
 ## 빠른 시작
@@ -20,7 +20,7 @@ CommonJS
 const {
   getRandomWritingTopic,
   getAllCategories,
-} = require("@dding/topic-engine");
+} = require("@dding-oss/topic-engine");
 
 console.log(getRandomWritingTopic());
 // { category: '여행', topic: '가보고 싶은 여행지' }
@@ -37,7 +37,7 @@ import {
   getRandomTopicByCategory,
   getTopicsCount,
   type WritingTopic,
-} from "@dding/topic-engine";
+} from "@dding-oss/topic-engine";
 
 const today: WritingTopic = getTodaysTopic(new Date("2025-08-15"));
 const travel = getRandomTopicByCategory("여행");

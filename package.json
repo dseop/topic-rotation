@@ -1,5 +1,5 @@
 {
-    "name": "@dding/topic-engine",
+    "name": "@dding-oss/topic-engine",
     "version": "0.1.0",
     "description": "Writing topic utilities: random, by category, and date-based topics.",
     "main": "dist/index.js",
