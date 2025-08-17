@@ -1,7 +1,7 @@
 {
     "name": "@dding/topic-engine",
-    "version": "0.0.0",
-    "private": true,
+    "version": "0.1.0",
+    "description": "Writing topic utilities: random, by category, and date-based topics.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -9,8 +9,20 @@
     ],
     "scripts": {
         "build": "tsc -p tsconfig.json",
+        "prepare": "npm run build",
         "test": "echo \"No tests\" && exit 0",
         "lint": "echo \"No linter configured\" && exit 0"
     },
+    "publishConfig": {
+        "access": "public"
+    },
+    "sideEffects": false,
+    "keywords": [
+        "writing",
+        "topics",
+        "random",
+        "korean",
+        "prompt"
+    ],
     "license": "MIT"
 }
