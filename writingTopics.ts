@@ -3,41 +3,8 @@ export type WritingTopic = {
   topic: string;
 };
 
-export const WRITING_TOPICS: WritingTopic[] = [
-  { category: "일상", topic: "최근에 나를 웃게 한 일" },
-  { category: "장소", topic: "내가 가장 좋아하는 장소" },
-  { category: "고민", topic: "요즘 나의 고민거리" },
-  { category: "추억", topic: "어릴 적 기억에 남는 순간" },
-  { category: "도전", topic: "앞으로 도전해보고 싶은 것" },
-  { category: "영화/책", topic: "최근에 본 인상 깊은 영화나 책" },
-  { category: "음악", topic: "요즘 즐겨 듣는 음악이나 노래" },
-  { category: "배움", topic: "최근에 새롭게 배운 것" },
-  { category: "스트레스", topic: "나만의 스트레스 해소법" },
-  { category: "음식", topic: "최근에 먹어본 맛있는 음식" },
-  { category: "행복", topic: "일상에서 느낀 작은 행복" },
-  { category: "여행", topic: "가보고 싶은 여행지" },
-  { category: "꿈", topic: "어릴 적 꿈꿨던 직업" },
-  // 추가된 10개 주제(250721)
-  { category: "감정", topic: "요즘 자주 드는 감정은 무엇인가요?" },
-  { category: "선택", topic: "오늘 하루 중 가장 잘한 선택은 무엇이었나요?" },
-  { category: "기쁨", topic: "요즘 나만의 작은 기쁨은 무엇인가요?" },
-  { category: "대화", topic: "잊을 수 없는 어떤 날의 대화가 있나요?" },
-  { category: "상상", topic: "아무도 없는 도시에서 하루를 보낸다면?" },
-  { category: "회상", topic: "10대 시절의 나에게 한 가지 조언을 한다면?" },
-  { category: "시간", topic: "오늘 하루를 색으로 표현한다면 어떤 색인가요?" },
-  {
-    category: "관찰",
-    topic: "지금 이 순간 주변에서 가장 조용한 물건은 무엇인가요?",
-  },
-  {
-    category: "멈춤",
-    topic: "만약 오늘 하루만 시간을 멈출 수 있다면, 무엇을 하겠나요?",
-  },
-  {
-    category: "용기",
-    topic: "최근에 용기를 낸 적이 있다면, 어떤 순간이었나요?",
-  },
-];
+import rawTopics from "./writingTopics.json";
+export const WRITING_TOPICS = rawTopics as unknown as WritingTopic[];
 
 /**
  * 랜덤하게 글쓰기 주제를 하나 반환합니다.
